@@ -15,6 +15,7 @@
 		CA21BE261CE0A98F0086D305 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE191CE0A98F0086D305 /* AFURLSessionManager.m */; };
 		CA21BE271CE0A98F0086D305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE1D1CE0A98F0086D305 /* AppDelegate.m */; };
 		CA21BE291CE0A98F0086D305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE1F1CE0A98F0086D305 /* main.m */; };
+		CA21BE301CE0C1610086D305 /* ACTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE2F1CE0C1610086D305 /* ACTabBarController.m */; };
 		CAAC98971CDE384B002DAA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC98951CDE384B002DAA3E /* Main.storyboard */; };
 		CAAC989A1CDE384B002DAA3E /* Acfun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98981CDE384B002DAA3E /* Acfun.xcdatamodeld */; };
 		CAAC989C1CDE384B002DAA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAC989B1CDE384B002DAA3E /* Assets.xcassets */; };
@@ -58,6 +59,8 @@
 		CA21BE1D1CE0A98F0086D305 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CA21BE1E1CE0A98F0086D305 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA21BE1F1CE0A98F0086D305 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA21BE2E1CE0C1610086D305 /* ACTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTabBarController.h; sourceTree = "<group>"; };
+		CA21BE2F1CE0C1610086D305 /* ACTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTabBarController.m; sourceTree = "<group>"; };
 		CAAC98891CDE384B002DAA3E /* Acfun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acfun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAC98961CDE384B002DAA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAAC98991CDE384B002DAA3E /* Acfun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acfun.xcdatamodel; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 				CA21BE021CE0A98F0086D305 /* HomePage */,
 				CA21BE061CE0A98F0086D305 /* Mine */,
 				CA21BE0A1CE0A98F0086D305 /* Others */,
+				CA21BE2A1CE0C1220086D305 /* Main */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -296,6 +300,39 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		CA21BE2A1CE0C1220086D305 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CA21BE2B1CE0C1220086D305 /* Controller */,
+				CA21BE2C1CE0C1220086D305 /* Model */,
+				CA21BE2D1CE0C1220086D305 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA21BE2B1CE0C1220086D305 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA21BE2E1CE0C1610086D305 /* ACTabBarController.h */,
+				CA21BE2F1CE0C1610086D305 /* ACTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA21BE2C1CE0C1220086D305 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA21BE2D1CE0C1220086D305 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CAAC98801CDE384B002DAA3E = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA21BE291CE0A98F0086D305 /* main.m in Sources */,
+				CA21BE301CE0C1610086D305 /* ACTabBarController.m in Sources */,
 				CA21BE211CE0A98F0086D305 /* AFHTTPSessionManager.m in Sources */,
 				CA21BE261CE0A98F0086D305 /* AFURLSessionManager.m in Sources */,
 				CA21BE271CE0A98F0086D305 /* AppDelegate.m in Sources */,
