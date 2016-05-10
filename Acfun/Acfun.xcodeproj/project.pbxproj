@@ -16,12 +16,20 @@
 		CA21BE271CE0A98F0086D305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE1D1CE0A98F0086D305 /* AppDelegate.m */; };
 		CA21BE291CE0A98F0086D305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE1F1CE0A98F0086D305 /* main.m */; };
 		CA21BE301CE0C1610086D305 /* ACTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE2F1CE0C1610086D305 /* ACTabBarController.m */; };
+		CA21BE331CE0C1F40086D305 /* ACHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE321CE0C1F40086D305 /* ACHomePageViewController.m */; };
+		CA21BE361CE0C24E0086D305 /* ACChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE351CE0C24E0086D305 /* ACChannelViewController.m */; };
+		CA21BE391CE0C2740086D305 /* ACAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE381CE0C2740086D305 /* ACAttentionViewController.m */; };
+		CA21BE3C1CE0C2970086D305 /* ACMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE3B1CE0C2970086D305 /* ACMineViewController.m */; };
+		CA21BE3F1CE0C8230086D305 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE3E1CE0C8230086D305 /* Const.m */; };
+		CA21BE441CE0D0340086D305 /* ACNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE431CE0D0340086D305 /* ACNavigationController.m */; };
+		CA21BE461CE1EF4A0086D305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA21BE451CE1EF4A0086D305 /* Assets.xcassets */; };
+		CA21BE4D1CE1F2F10086D305 /* UIImage+OriginImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE4C1CE1F2F10086D305 /* UIImage+OriginImage.m */; };
 		CAAC98971CDE384B002DAA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC98951CDE384B002DAA3E /* Main.storyboard */; };
 		CAAC989A1CDE384B002DAA3E /* Acfun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98981CDE384B002DAA3E /* Acfun.xcdatamodeld */; };
-		CAAC989C1CDE384B002DAA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAC989B1CDE384B002DAA3E /* Assets.xcassets */; };
 		CAAC989F1CDE384B002DAA3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC989D1CDE384B002DAA3E /* LaunchScreen.storyboard */; };
 		CAAC98AA1CDE384B002DAA3E /* AcfunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98A91CDE384B002DAA3E /* AcfunTests.m */; };
 		CAAC98B51CDE384B002DAA3E /* AcfunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98B41CDE384B002DAA3E /* AcfunUITests.m */; };
+		CD5B1D47995321BF6E8CAFF7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9876300D659BABEF113B5318 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DFCBD9CC4E6EBF75943DF8E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9876300D659BABEF113B5318 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA21BE0D1CE0A98F0086D305 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		CA21BE0E1CE0A98F0086D305 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		CA21BE0F1CE0A98F0086D305 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -61,10 +71,25 @@
 		CA21BE1F1CE0A98F0086D305 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA21BE2E1CE0C1610086D305 /* ACTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTabBarController.h; sourceTree = "<group>"; };
 		CA21BE2F1CE0C1610086D305 /* ACTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTabBarController.m; sourceTree = "<group>"; };
+		CA21BE311CE0C1F40086D305 /* ACHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACHomePageViewController.h; sourceTree = "<group>"; };
+		CA21BE321CE0C1F40086D305 /* ACHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACHomePageViewController.m; sourceTree = "<group>"; };
+		CA21BE341CE0C24E0086D305 /* ACChannelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACChannelViewController.h; sourceTree = "<group>"; };
+		CA21BE351CE0C24E0086D305 /* ACChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACChannelViewController.m; sourceTree = "<group>"; };
+		CA21BE371CE0C2740086D305 /* ACAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAttentionViewController.h; sourceTree = "<group>"; };
+		CA21BE381CE0C2740086D305 /* ACAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAttentionViewController.m; sourceTree = "<group>"; };
+		CA21BE3A1CE0C2970086D305 /* ACMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMineViewController.h; sourceTree = "<group>"; };
+		CA21BE3B1CE0C2970086D305 /* ACMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMineViewController.m; sourceTree = "<group>"; };
+		CA21BE3D1CE0C8230086D305 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		CA21BE3E1CE0C8230086D305 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
+		CA21BE401CE0CB770086D305 /* ACfun.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACfun.pch; sourceTree = "<group>"; };
+		CA21BE421CE0D0340086D305 /* ACNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNavigationController.h; sourceTree = "<group>"; };
+		CA21BE431CE0D0340086D305 /* ACNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNavigationController.m; sourceTree = "<group>"; };
+		CA21BE451CE1EF4A0086D305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA21BE4B1CE1F2F10086D305 /* UIImage+OriginImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OriginImage.h"; sourceTree = "<group>"; };
+		CA21BE4C1CE1F2F10086D305 /* UIImage+OriginImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OriginImage.m"; sourceTree = "<group>"; };
 		CAAC98891CDE384B002DAA3E /* Acfun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acfun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAC98961CDE384B002DAA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAAC98991CDE384B002DAA3E /* Acfun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acfun.xcdatamodel; sourceTree = "<group>"; };
-		CAAC989B1CDE384B002DAA3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAAC989E1CDE384B002DAA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAAC98A51CDE384B002DAA3E /* AcfunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcfunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAC98A91CDE384B002DAA3E /* AcfunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcfunTests.m; sourceTree = "<group>"; };
@@ -72,6 +97,7 @@
 		CAAC98B01CDE384B002DAA3E /* AcfunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcfunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAC98B41CDE384B002DAA3E /* AcfunUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcfunUITests.m; sourceTree = "<group>"; };
 		CAAC98B61CDE384B002DAA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEE0FFF252A53EB857A5CC0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5B1D47995321BF6E8CAFF7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +126,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97FE608E9AB856A6C6BB3E20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE0FFF252A53EB857A5CC0 /* Pods.debug.xcconfig */,
+				5DFCBD9CC4E6EBF75943DF8E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CA21BDF91CE0A98F0086D305 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CA21BDFA1CE0A98F0086D305 /* Attention */,
-				CA21BDFE1CE0A98F0086D305 /* Channel */,
 				CA21BE021CE0A98F0086D305 /* HomePage */,
+				CA21BDFE1CE0A98F0086D305 /* Channel */,
+				CA21BDFA1CE0A98F0086D305 /* Attention */,
 				CA21BE061CE0A98F0086D305 /* Mine */,
 				CA21BE0A1CE0A98F0086D305 /* Others */,
 				CA21BE2A1CE0C1220086D305 /* Main */,
@@ -125,6 +161,8 @@
 		CA21BDFB1CE0A98F0086D305 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CA21BE371CE0C2740086D305 /* ACAttentionViewController.h */,
+				CA21BE381CE0C2740086D305 /* ACAttentionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,6 +194,8 @@
 		CA21BDFF1CE0A98F0086D305 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CA21BE341CE0C24E0086D305 /* ACChannelViewController.h */,
+				CA21BE351CE0C24E0086D305 /* ACChannelViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +227,8 @@
 		CA21BE031CE0A98F0086D305 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CA21BE311CE0C1F40086D305 /* ACHomePageViewController.h */,
+				CA21BE321CE0C1F40086D305 /* ACHomePageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +260,8 @@
 		CA21BE071CE0A98F0086D305 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CA21BE3A1CE0C2970086D305 /* ACMineViewController.h */,
+				CA21BE3B1CE0C2970086D305 /* ACMineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +283,7 @@
 		CA21BE0A1CE0A98F0086D305 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				CA21BE471CE1F2AC0086D305 /* Categorys */,
 				CA21BE0B1CE0A98F0086D305 /* Libs */,
 				CA21BE1A1CE0A98F0086D305 /* Static */,
 				CA21BE1B1CE0A98F0086D305 /* System */,
@@ -278,6 +323,9 @@
 		CA21BE1A1CE0A98F0086D305 /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				CA21BE3D1CE0C8230086D305 /* Const.h */,
+				CA21BE3E1CE0C8230086D305 /* Const.m */,
+				CA21BE401CE0CB770086D305 /* ACfun.pch */,
 			);
 			path = Static;
 			sourceTree = "<group>";
@@ -315,6 +363,8 @@
 			children = (
 				CA21BE2E1CE0C1610086D305 /* ACTabBarController.h */,
 				CA21BE2F1CE0C1610086D305 /* ACTabBarController.m */,
+				CA21BE421CE0D0340086D305 /* ACNavigationController.h */,
+				CA21BE431CE0D0340086D305 /* ACNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,6 +383,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CA21BE471CE1F2AC0086D305 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				CA21BE4B1CE1F2F10086D305 /* UIImage+OriginImage.h */,
+				CA21BE4C1CE1F2F10086D305 /* UIImage+OriginImage.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
 		CAAC98801CDE384B002DAA3E = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +399,8 @@
 				CAAC98A81CDE384B002DAA3E /* AcfunTests */,
 				CAAC98B31CDE384B002DAA3E /* AcfunUITests */,
 				CAAC988A1CDE384B002DAA3E /* Products */,
+				97FE608E9AB856A6C6BB3E20 /* Pods */,
+				E33E47BC27EF6F610837E41F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -358,8 +419,8 @@
 			children = (
 				CA21BDF91CE0A98F0086D305 /* Classes */,
 				CAAC98951CDE384B002DAA3E /* Main.storyboard */,
-				CAAC989B1CDE384B002DAA3E /* Assets.xcassets */,
 				CAAC989D1CDE384B002DAA3E /* LaunchScreen.storyboard */,
+				CA21BE451CE1EF4A0086D305 /* Assets.xcassets */,
 				CAAC98981CDE384B002DAA3E /* Acfun.xcdatamodeld */,
 				CAAC988C1CDE384B002DAA3E /* Supporting Files */,
 			);
@@ -391,6 +452,14 @@
 			path = AcfunUITests;
 			sourceTree = "<group>";
 		};
+		E33E47BC27EF6F610837E41F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9876300D659BABEF113B5318 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,9 +467,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAAC98B91CDE384B002DAA3E /* Build configuration list for PBXNativeTarget "Acfun" */;
 			buildPhases = (
+				79B4CB8726E98960733F5577 /* Check Pods Manifest.lock */,
 				CAAC98851CDE384B002DAA3E /* Sources */,
 				CAAC98861CDE384B002DAA3E /* Frameworks */,
 				CAAC98871CDE384B002DAA3E /* Resources */,
+				24F7B8E595FDDCC960D6FB07 /* Embed Pods Frameworks */,
+				C3982B7DCC96EFF8C5020DFA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -495,7 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAAC989F1CDE384B002DAA3E /* LaunchScreen.storyboard in Resources */,
-				CAAC989C1CDE384B002DAA3E /* Assets.xcassets in Resources */,
+				CA21BE461CE1EF4A0086D305 /* Assets.xcassets in Resources */,
 				CAAC98971CDE384B002DAA3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,19 +588,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24F7B8E595FDDCC960D6FB07 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79B4CB8726E98960733F5577 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3982B7DCC96EFF8C5020DFA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CAAC98851CDE384B002DAA3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA21BE3F1CE0C8230086D305 /* Const.m in Sources */,
+				CA21BE361CE0C24E0086D305 /* ACChannelViewController.m in Sources */,
+				CA21BE4D1CE1F2F10086D305 /* UIImage+OriginImage.m in Sources */,
 				CA21BE291CE0A98F0086D305 /* main.m in Sources */,
 				CA21BE301CE0C1610086D305 /* ACTabBarController.m in Sources */,
 				CA21BE211CE0A98F0086D305 /* AFHTTPSessionManager.m in Sources */,
 				CA21BE261CE0A98F0086D305 /* AFURLSessionManager.m in Sources */,
+				CA21BE3C1CE0C2970086D305 /* ACMineViewController.m in Sources */,
 				CA21BE271CE0A98F0086D305 /* AppDelegate.m in Sources */,
 				CA21BE231CE0A98F0086D305 /* AFSecurityPolicy.m in Sources */,
 				CA21BE241CE0A98F0086D305 /* AFURLRequestSerialization.m in Sources */,
+				CA21BE331CE0C1F40086D305 /* ACHomePageViewController.m in Sources */,
+				CA21BE441CE0D0340086D305 /* ACNavigationController.m in Sources */,
 				CA21BE221CE0A98F0086D305 /* AFNetworkReachabilityManager.m in Sources */,
+				CA21BE391CE0C2740086D305 /* ACAttentionViewController.m in Sources */,
 				CA21BE251CE0A98F0086D305 /* AFURLResponseSerialization.m in Sources */,
 				CAAC989A1CDE384B002DAA3E /* Acfun.xcdatamodeld in Sources */,
 			);
@@ -671,8 +798,10 @@
 		};
 		CAAC98BA1CDE384B002DAA3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEE0FFF252A53EB857A5CC0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Acfun/Classes/Others/Static/ACfun.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Acfun/Classes/Others/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hehe.Acfun;
@@ -682,8 +811,10 @@
 		};
 		CAAC98BB1CDE384B002DAA3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFCBD9CC4E6EBF75943DF8E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Acfun/Classes/Others/Static/ACfun.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Acfun/Classes/Others/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hehe.Acfun;

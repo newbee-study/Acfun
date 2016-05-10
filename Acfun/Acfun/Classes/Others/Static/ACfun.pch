@@ -1,0 +1,12 @@
+//
+//  ACfun.pch
+//  Acfun
+//
+//  Created by 黄文伟 on 16/5/9.
+//  Copyright © 2016年 黄文伟. All rights reserved.
+//
+
+#define HScreenW [UIScreen mainScreen].bounds.size.width
+#define HScreenH [UIScreen mainScreen].bounds.size.height
+
+#import "UIImage+OriginImage.h"
