@@ -55,6 +55,8 @@
     ACNavigationController * nav = [[ACNavigationController alloc] initWithRootViewController:home];
     
     home.title = @"首页";
+    home.navigationItem.title = nil;
+
     
     home.tabBarItem.image = [UIImage imageNamed:@""];
     
@@ -65,6 +67,8 @@
     
     ACNavigationController * nav1 = [[ACNavigationController alloc] initWithRootViewController:channel];
     channel.title = @"频道";
+    channel.navigationItem.title = nil;
+
 
     [self addChildViewController:nav1];
     
@@ -73,6 +77,8 @@
     
     ACNavigationController * nav2 = [[ACNavigationController alloc] initWithRootViewController:attention];
     attention.title = @"关注";
+    attention.navigationItem.title = nil;
+
 
     
     [self addChildViewController:nav2];
@@ -81,6 +87,8 @@
     
         ACNavigationController * nav3 = [[ACNavigationController alloc] initWithRootViewController:mine];
     mine.title = @"我的";
+    mine.navigationItem.title = nil;
+
     mine.tabBarItem.image = [UIImage originImageWithName:@"iPadFavBangumiAnimationFrame-1"];
    [ mine.tabBarItem setSelectedImage:[UIImage originImageWithName:@"iPadFavBangumiAnimationFrame8"]];
     

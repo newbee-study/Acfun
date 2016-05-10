@@ -7,6 +7,7 @@
 //
 
 #import "ACHomePageViewController.h"
+#import <Masonry.h>
 
 @interface ACHomePageViewController ()
 
@@ -16,13 +17,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIView *headview = [[UIView alloc] init];
-    headview.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
+    [self setUpNavBarItems];
+      }
+
+- (void)setUpRedView
+{
+//    UIView *headview = [[UIView alloc] init];
+    UIView *headview = [[UIView alloc] initWithFrame:CGRectMake(0, -20, HScreenW, HScreenH/10.0)];
     
     [self.view addSubview:headview];
+    
+//    headview.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
+    
+//    [headview mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.view.mas_top);
+//        make.leading.equalTo(self.view.mas_leading);
+//        make.trailing.equalTo(self.view.mas_trailing);
+////        make.height.offset(50);
+//    }];
+    
+    
 }
 
+- (void)setUpNavBarItems
+{
+    //左侧logo
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage originImageWithName:@"logo_iPad"]] ];
+    
+   
+    //右侧离线缓存
+   UIBarButtonItem *downLoadBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"nav_download"] style:UIBarButtonItemStyleDone target:self action:@selector(downLoad)];
+    
+    self.navigationItem.rightBarButtonItems = @[downLoadBtn];
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -40,58 +68,10 @@
     return 0;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
+- (void)downLoad
+{
+    NSLog(@"缓存");
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

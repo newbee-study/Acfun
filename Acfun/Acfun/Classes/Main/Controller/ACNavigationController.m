@@ -17,12 +17,13 @@
 +(void)load
 {
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
-    [bar setBarTintColor:[[UIColor redColor] colorWithAlphaComponent:0.5]];
+    [bar setBarTintColor:[UIColor colorWithPatternImage:[UIImage originImageWithName:@"#fd4c5b"]]];
+    [bar setBackIndicatorImage:[UIImage imageNamed:@"logo_iPad"]];
 
 }
 - (void)viewDidLoad {
-    [super viewDidLoad];
-  
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage originImageWithName:@"logo_iPad"]] ];
 }
 
 
@@ -34,11 +35,12 @@
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated
 {
+    /*
     UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
     
     if (!self.childViewControllers.count) {
        navBar.hidden = YES;
-    }
+    }*/
     return [super popViewControllerAnimated:animated];
 }
 /*
@@ -57,10 +59,10 @@
 //    NSLog(@"%@--",navBar);
 //    NSLog(@"%@",self.navigationBar);
 
-    
+   /*
     if (self.childViewControllers.count ==0) {
         self.navigationBar.hidden = YES;
-    }
+    }*/
     
     [super pushViewController:viewController animated:animated];
 
