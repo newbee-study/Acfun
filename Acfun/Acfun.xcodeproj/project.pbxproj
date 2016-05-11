@@ -29,6 +29,13 @@
 		CAAC989F1CDE384B002DAA3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC989D1CDE384B002DAA3E /* LaunchScreen.storyboard */; };
 		CAAC98AA1CDE384B002DAA3E /* AcfunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98A91CDE384B002DAA3E /* AcfunTests.m */; };
 		CAAC98B51CDE384B002DAA3E /* AcfunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98B41CDE384B002DAA3E /* AcfunUITests.m */; };
+		CAB0EE311CE310B000BA96BF /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB0EE301CE310B000BA96BF /* UIView+frame.m */; };
+		CAB0EE721CE35AB700BA96BF /* ACHomeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB0EE711CE35AB700BA96BF /* ACHomeCollectionView.m */; };
+		CAB0EE751CE35B8800BA96BF /* HomeVedioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB0EE741CE35B8800BA96BF /* HomeVedioCell.m */; };
+		CAB0EE771CE35B9900BA96BF /* HomeVedioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB0EE761CE35B9900BA96BF /* HomeVedioCell.xib */; };
+		CAB0EE7E1CE36AE300BA96BF /* HomeSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB0EE7C1CE36AE300BA96BF /* HomeSectionCell.m */; };
+		CAB0EE7F1CE36AE300BA96BF /* HomeSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB0EE7D1CE36AE300BA96BF /* HomeSectionCell.xib */; };
+		CAB0EE851CE3808E00BA96BF /* HomeSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB0EE841CE3808E00BA96BF /* HomeSectionItem.m */; };
 		CD5B1D47995321BF6E8CAFF7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9876300D659BABEF113B5318 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +104,18 @@
 		CAAC98B01CDE384B002DAA3E /* AcfunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcfunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAC98B41CDE384B002DAA3E /* AcfunUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcfunUITests.m; sourceTree = "<group>"; };
 		CAAC98B61CDE384B002DAA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB0EE2F1CE310B000BA96BF /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		CAB0EE301CE310B000BA96BF /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		CAB0EE701CE35AB700BA96BF /* ACHomeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACHomeCollectionView.h; sourceTree = "<group>"; };
+		CAB0EE711CE35AB700BA96BF /* ACHomeCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACHomeCollectionView.m; sourceTree = "<group>"; };
+		CAB0EE731CE35B8800BA96BF /* HomeVedioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVedioCell.h; sourceTree = "<group>"; };
+		CAB0EE741CE35B8800BA96BF /* HomeVedioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVedioCell.m; sourceTree = "<group>"; };
+		CAB0EE761CE35B9900BA96BF /* HomeVedioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVedioCell.xib; sourceTree = "<group>"; };
+		CAB0EE7B1CE36AE300BA96BF /* HomeSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSectionCell.h; sourceTree = "<group>"; };
+		CAB0EE7C1CE36AE300BA96BF /* HomeSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSectionCell.m; sourceTree = "<group>"; };
+		CAB0EE7D1CE36AE300BA96BF /* HomeSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSectionCell.xib; sourceTree = "<group>"; };
+		CAB0EE831CE3808E00BA96BF /* HomeSectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSectionItem.h; sourceTree = "<group>"; };
+		CAB0EE841CE3808E00BA96BF /* HomeSectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSectionItem.m; sourceTree = "<group>"; };
 		DBEE0FFF252A53EB857A5CC0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +255,8 @@
 		CA21BE041CE0A98F0086D305 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CAB0EE831CE3808E00BA96BF /* HomeSectionItem.h */,
+				CAB0EE841CE3808E00BA96BF /* HomeSectionItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +264,14 @@
 		CA21BE051CE0A98F0086D305 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CAB0EE701CE35AB700BA96BF /* ACHomeCollectionView.h */,
+				CAB0EE711CE35AB700BA96BF /* ACHomeCollectionView.m */,
+				CAB0EE731CE35B8800BA96BF /* HomeVedioCell.h */,
+				CAB0EE741CE35B8800BA96BF /* HomeVedioCell.m */,
+				CAB0EE761CE35B9900BA96BF /* HomeVedioCell.xib */,
+				CAB0EE7B1CE36AE300BA96BF /* HomeSectionCell.h */,
+				CAB0EE7C1CE36AE300BA96BF /* HomeSectionCell.m */,
+				CAB0EE7D1CE36AE300BA96BF /* HomeSectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +415,8 @@
 		CA21BE471CE1F2AC0086D305 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				CAB0EE2F1CE310B000BA96BF /* UIView+frame.h */,
+				CAB0EE301CE310B000BA96BF /* UIView+frame.m */,
 				CA21BE4B1CE1F2F10086D305 /* UIImage+OriginImage.h */,
 				CA21BE4C1CE1F2F10086D305 /* UIImage+OriginImage.m */,
 			);
@@ -530,6 +561,7 @@
 				TargetAttributes = {
 					CAAC98881CDE384B002DAA3E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4NMHW46Q3L;
 					};
 					CAAC98A41CDE384B002DAA3E = {
 						CreatedOnToolsVersion = 7.3;
@@ -567,7 +599,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAAC989F1CDE384B002DAA3E /* LaunchScreen.storyboard in Resources */,
+				CAB0EE7F1CE36AE300BA96BF /* HomeSectionCell.xib in Resources */,
 				CA21BE461CE1EF4A0086D305 /* Assets.xcassets in Resources */,
+				CAB0EE771CE35B9900BA96BF /* HomeVedioCell.xib in Resources */,
 				CAAC98971CDE384B002DAA3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,18 +679,23 @@
 				CA21BE361CE0C24E0086D305 /* ACChannelViewController.m in Sources */,
 				CA21BE4D1CE1F2F10086D305 /* UIImage+OriginImage.m in Sources */,
 				CA21BE291CE0A98F0086D305 /* main.m in Sources */,
+				CAB0EE7E1CE36AE300BA96BF /* HomeSectionCell.m in Sources */,
+				CAB0EE851CE3808E00BA96BF /* HomeSectionItem.m in Sources */,
 				CA21BE301CE0C1610086D305 /* ACTabBarController.m in Sources */,
 				CA21BE211CE0A98F0086D305 /* AFHTTPSessionManager.m in Sources */,
 				CA21BE261CE0A98F0086D305 /* AFURLSessionManager.m in Sources */,
 				CA21BE3C1CE0C2970086D305 /* ACMineViewController.m in Sources */,
 				CA21BE271CE0A98F0086D305 /* AppDelegate.m in Sources */,
+				CAB0EE721CE35AB700BA96BF /* ACHomeCollectionView.m in Sources */,
 				CA21BE231CE0A98F0086D305 /* AFSecurityPolicy.m in Sources */,
 				CA21BE241CE0A98F0086D305 /* AFURLRequestSerialization.m in Sources */,
 				CA21BE331CE0C1F40086D305 /* ACHomePageViewController.m in Sources */,
+				CAB0EE311CE310B000BA96BF /* UIView+frame.m in Sources */,
 				CA21BE441CE0D0340086D305 /* ACNavigationController.m in Sources */,
 				CA21BE221CE0A98F0086D305 /* AFNetworkReachabilityManager.m in Sources */,
 				CA21BE391CE0C2740086D305 /* ACAttentionViewController.m in Sources */,
 				CA21BE251CE0A98F0086D305 /* AFURLResponseSerialization.m in Sources */,
+				CAB0EE751CE35B8800BA96BF /* HomeVedioCell.m in Sources */,
 				CAAC989A1CDE384B002DAA3E /* Acfun.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,7 +788,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -788,7 +827,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -801,11 +840,14 @@
 			baseConfigurationReference = DBEE0FFF252A53EB857A5CC0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = Acfun/Classes/Others/Static/ACfun.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Acfun/Classes/Others/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hehe.Acfun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -814,11 +856,14 @@
 			baseConfigurationReference = 5DFCBD9CC4E6EBF75943DF8E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = Acfun/Classes/Others/Static/ACfun.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Acfun/Classes/Others/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hehe.Acfun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

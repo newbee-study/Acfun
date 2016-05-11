@@ -8,3 +8,4 @@
 
 #import "Const.h"
 
+CGFloat const HomeCellMargin = 10;

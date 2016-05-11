@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionPlayCell" id="ZGW-cH-jAM" customClass="HomeVedioCell">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="132"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article_cover_default" translatesAutoresizingMaskIntoConstraints="NO" id="e4u-OK-EPa">
+                        <rect key="frame" x="0.0" y="0.0" width="136" height="90"/>
+                        <color key="backgroundColor" red="1" green="0.72685075330611992" blue="0.4808528160498986" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="APA-Qz-ANP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="认真你就输了" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVo-gB-v5Z">
+                        <rect key="frame" x="0.0" y="100" width="136" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="e4u-OK-EPa" firstAttribute="top" secondItem="ZGW-cH-jAM" secondAttribute="top" id="2W4-YR-Phl"/>
+                <constraint firstItem="e4u-OK-EPa" firstAttribute="leading" secondItem="ZGW-cH-jAM" secondAttribute="leading" id="JCM-nB-PTa"/>
+                <constraint firstAttribute="trailing" secondItem="cVo-gB-v5Z" secondAttribute="trailing" id="fCh-ZI-Fac"/>
+                <constraint firstAttribute="trailing" secondItem="e4u-OK-EPa" secondAttribute="trailing" id="naH-s9-GUk"/>
+                <constraint firstItem="cVo-gB-v5Z" firstAttribute="leading" secondItem="ZGW-cH-jAM" secondAttribute="leading" id="weR-7o-v8D"/>
+                <constraint firstItem="cVo-gB-v5Z" firstAttribute="top" secondItem="e4u-OK-EPa" secondAttribute="bottom" constant="10" id="xKh-q4-sPJ"/>
+            </constraints>
+            <size key="customSize" width="136" height="132"/>
+            <point key="canvasLocation" x="283" y="230"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="article_cover_default" width="300" height="300"/>
+    </resources>
+</document>

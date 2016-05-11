@@ -10,3 +10,7 @@
 #define HScreenH [UIScreen mainScreen].bounds.size.height
 
 #import "UIImage+OriginImage.h"
+#import "UIView+frame.h"
+#import "Const.h"
+#define SectionCell @"SectionCell"
+#define HomeCollectionPlayCell @"HomeCollectionPlayCell"
