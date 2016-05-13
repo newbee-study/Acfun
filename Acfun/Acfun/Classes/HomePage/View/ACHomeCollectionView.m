@@ -43,6 +43,7 @@
     CGFloat width = (HScreenW - HomeCellMargin*4)*1.0/2;
     flow.itemSize = CGSizeMake(width, 90);
     
+    
     UICollectionView *collectionV = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flow];
     
     self.collectionV = collectionV;

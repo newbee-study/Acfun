@@ -12,7 +12,8 @@
 #import "ACAttentionViewController.h"
 #import "ACHomePageViewController.h"
 #import "ACNavigationController.h"
-@interface ACTabBarController ()
+#import "ACTabBar.h"
+@interface ACTabBarController () <ACTabBarDelegate>
 @end
 
 @implementation ACTabBarController
@@ -20,9 +21,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     [self setUpFont];
     
     [self setUpAllChildView];
+    
+       self.tabBar.hidden = YES;
+    
+    
+    
+
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    ACTabBar *tabbar = [[ACTabBar alloc] init];
+    
+    tabbar.delegate = self;
+    
+    tabbar.items = self.tabBar.items;
+    
+    //    [self setValue:tabbar forKey:@"tabBar"];
+    tabbar.frame = self.tabBar.frame;
+    
+    [self.view addSubview:tabbar];
+
+    
+}
+//自定义TabBar代理方法
+- (void)ACTabBarClickButton:(ACTabBarButton *)button
+{
+    UIButton *btn = button;
+    self.selectedIndex = btn.tag;
 }
 //设置字体，颜色
 - (void)setUpFont
@@ -45,55 +75,50 @@
                                  };
     [item setTitleTextAttributes:dictNormal forState:UIControlStateNormal];
     
+    
 }
 - (void)setUpAllChildView
 {
     //首页控制器
     
     ACHomePageViewController *home = [[ACHomePageViewController alloc] init];
-
-    ACNavigationController * nav = [[ACNavigationController alloc] initWithRootViewController:home];
     
-    home.title = @"首页";
-    home.navigationItem.title = nil;
-
-    
-    home.tabBarItem.image = [UIImage imageNamed:@""];
-    
-    [self addChildViewController:nav];
+    [self setUpChildViewControllerWith:home title:@"首页" image:@"tab_bar_icon_one_normal" selectedImage:@"tab_bar_icon_one_selected"];
     
     //频道 控制器
     ACChannelViewController *channel = [[ACChannelViewController alloc] init];
     
-    ACNavigationController * nav1 = [[ACNavigationController alloc] initWithRootViewController:channel];
-    channel.title = @"频道";
-    channel.navigationItem.title = nil;
-
-
-    [self addChildViewController:nav1];
+    [self setUpChildViewControllerWith:channel title:@"频道" image:@"tab_bar_icon_two_normal" selectedImage:@"tab_bar_icon_two_selected"];
     
     //关注 控制器
     ACAttentionViewController *attention = [[ACAttentionViewController alloc] init];
     
-    ACNavigationController * nav2 = [[ACNavigationController alloc] initWithRootViewController:attention];
-    attention.title = @"关注";
-    attention.navigationItem.title = nil;
-
-
-    
-    [self addChildViewController:nav2];
+    [self setUpChildViewControllerWith:attention title:@"关注" image:@"tab_bar_icon_three_normal" selectedImage:@"tab_bar_icon_three_selected"];
     //我的 控制器
     ACMineViewController *mine = [[ACMineViewController alloc]init];
     
-        ACNavigationController * nav3 = [[ACNavigationController alloc] initWithRootViewController:mine];
-    mine.title = @"我的";
-    mine.navigationItem.title = nil;
+    [self setUpChildViewControllerWith:mine title:@"我的" image:@"tab_bar_icon_four_normal" selectedImage:@"tab_bar_icon_four_selected"];
+    
 
-    mine.tabBarItem.image = [UIImage originImageWithName:@"iPadFavBangumiAnimationFrame-1"];
-   [ mine.tabBarItem setSelectedImage:[UIImage originImageWithName:@"iPadFavBangumiAnimationFrame8"]];
+}
+- (void)setUpChildViewControllerWith:(UIViewController *)vc title:(NSString *)title
+                                    image:(NSString *)image selectedImage:(NSString *)selectedImage
+{
+
     
-    [self addChildViewController:nav3];
+    ACNavigationController * nav = [[ACNavigationController alloc] initWithRootViewController:vc];
+    vc.title = title;
+    vc.navigationItem.title = nil;
+
+    [vc.tabBarItem setImage:[UIImage originImageWithName:image]];
+    [vc.tabBarItem setSelectedImage:[UIImage originImageWithName:selectedImage]];
     
+    [self addChildViewController:nav];
+    
+    
+
+    
+
 
 }
 

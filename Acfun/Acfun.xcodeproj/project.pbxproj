@@ -24,6 +24,8 @@
 		CA21BE441CE0D0340086D305 /* ACNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE431CE0D0340086D305 /* ACNavigationController.m */; };
 		CA21BE461CE1EF4A0086D305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA21BE451CE1EF4A0086D305 /* Assets.xcassets */; };
 		CA21BE4D1CE1F2F10086D305 /* UIImage+OriginImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE4C1CE1F2F10086D305 /* UIImage+OriginImage.m */; };
+		CA25BA101CE609860089E8D1 /* ACTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25BA0F1CE609860089E8D1 /* ACTabBar.m */; };
+		CA25BA131CE61B050089E8D1 /* ACTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25BA121CE61B050089E8D1 /* ACTabBarButton.m */; };
 		CAAC98971CDE384B002DAA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC98951CDE384B002DAA3E /* Main.storyboard */; };
 		CAAC989A1CDE384B002DAA3E /* Acfun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98981CDE384B002DAA3E /* Acfun.xcdatamodeld */; };
 		CAAC989F1CDE384B002DAA3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC989D1CDE384B002DAA3E /* LaunchScreen.storyboard */; };
@@ -94,6 +96,10 @@
 		CA21BE451CE1EF4A0086D305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA21BE4B1CE1F2F10086D305 /* UIImage+OriginImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OriginImage.h"; sourceTree = "<group>"; };
 		CA21BE4C1CE1F2F10086D305 /* UIImage+OriginImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OriginImage.m"; sourceTree = "<group>"; };
+		CA25BA0E1CE609860089E8D1 /* ACTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACTabBar.h; path = ../../HomePage/View/ACTabBar.h; sourceTree = "<group>"; };
+		CA25BA0F1CE609860089E8D1 /* ACTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACTabBar.m; path = ../../HomePage/View/ACTabBar.m; sourceTree = "<group>"; };
+		CA25BA111CE61B050089E8D1 /* ACTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTabBarButton.h; sourceTree = "<group>"; };
+		CA25BA121CE61B050089E8D1 /* ACTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTabBarButton.m; sourceTree = "<group>"; };
 		CAAC98891CDE384B002DAA3E /* Acfun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acfun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAC98961CDE384B002DAA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAAC98991CDE384B002DAA3E /* Acfun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acfun.xcdatamodel; sourceTree = "<group>"; };
@@ -408,6 +414,10 @@
 		CA21BE2D1CE0C1220086D305 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA25BA0E1CE609860089E8D1 /* ACTabBar.h */,
+				CA25BA0F1CE609860089E8D1 /* ACTabBar.m */,
+				CA25BA111CE61B050089E8D1 /* ACTabBarButton.h */,
+				CA25BA121CE61B050089E8D1 /* ACTabBarButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -690,6 +700,7 @@
 				CA21BE231CE0A98F0086D305 /* AFSecurityPolicy.m in Sources */,
 				CA21BE241CE0A98F0086D305 /* AFURLRequestSerialization.m in Sources */,
 				CA21BE331CE0C1F40086D305 /* ACHomePageViewController.m in Sources */,
+				CA25BA131CE61B050089E8D1 /* ACTabBarButton.m in Sources */,
 				CAB0EE311CE310B000BA96BF /* UIView+frame.m in Sources */,
 				CA21BE441CE0D0340086D305 /* ACNavigationController.m in Sources */,
 				CA21BE221CE0A98F0086D305 /* AFNetworkReachabilityManager.m in Sources */,
@@ -697,6 +708,7 @@
 				CA21BE251CE0A98F0086D305 /* AFURLResponseSerialization.m in Sources */,
 				CAB0EE751CE35B8800BA96BF /* HomeVedioCell.m in Sources */,
 				CAAC989A1CDE384B002DAA3E /* Acfun.xcdatamodeld in Sources */,
+				CA25BA101CE609860089E8D1 /* ACTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
