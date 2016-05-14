@@ -47,7 +47,7 @@
     
     }];
     
-    self.titleLabel.font = [UIFont systemFontOfSize:13];
+    self.titleLabel.font = [UIFont systemFontOfSize:12];
     [self.titleLabel sizeToFit];
     self.titleLabel.frame = CGRectMake((self.H_width - self.titleLabel.H_width) * 0.5, self.H_height * 0.6, self.titleLabel.H_width, self.titleLabel.H_height);
     
@@ -55,7 +55,7 @@
 //    
 //    self.titleLabel.H_y = self.imageView.H_y + 20;
 //    
-//
+
 //    [self.titleLabel sizeToFit];
     
 //    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {

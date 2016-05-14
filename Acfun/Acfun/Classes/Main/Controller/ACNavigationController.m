@@ -22,7 +22,7 @@
 
 }
 - (void)viewDidLoad {
-    
+    [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage originImageWithName:@"logo_iPad"]] ];
 }
 

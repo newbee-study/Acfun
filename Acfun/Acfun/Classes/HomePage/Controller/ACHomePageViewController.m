@@ -40,17 +40,57 @@
     
    
     //右侧离线缓存
-   UIBarButtonItem *downLoadBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"nav_download"] style:UIBarButtonItemStyleDone target:self action:@selector(downLoad)];
+//   UIBarButtonItem *downLoadBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"home_navi_download"] style:UIBarButtonItemStyleDone target:self action:@selector(downLoad)];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    
+    UIBarButtonItem *downLoadBtn = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    [btn setImage:[UIImage originImageWithName:@"home_navi_download"] forState:UIControlStateNormal];
+    
+    
+    [btn setImage:[UIImage originImageWithName:@"home_navi_download_highlighted"] forState:UIControlStateHighlighted];
+    
+    btn.frame = CGRectMake(0, 0, 20,  20);
+    
     //右侧历史记录
-   UIBarButtonItem *historyBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"nav_history"] style:UIBarButtonItemStyleDone target:self action:@selector(history)];
+    UIButton *btnHistory = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    
+    UIBarButtonItem *historyBtn = [[UIBarButtonItem alloc] initWithCustomView:btnHistory];
+    [btnHistory setImage:[UIImage originImageWithName:@"home_navi_history"] forState:UIControlStateNormal];
+    
+    
+    [btnHistory setImage:[UIImage originImageWithName:@"home_navi_history_highlighted"] forState:UIControlStateHighlighted];
+    
+    btnHistory.frame = CGRectMake(0, 0, 20,  20);
+    
+//   UIBarButtonItem *historyBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"nav_history"] style:UIBarButtonItemStyleDone target:self action:@selector(history)];
     //右侧搜索
-   UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"search_icon"] style:UIBarButtonItemStyleDone target:self action:@selector(search)];
+    UIButton *btnSearch = [UIButton buttonWithType:UIButtonTypeCustom];
     
     
+    UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc] initWithCustomView:btnSearch];
+    [btnSearch setImage:[UIImage originImageWithName:@"home_navi_search"] forState:UIControlStateNormal];
     
     
+    [btnSearch setImage:[UIImage originImageWithName:@"home_navi_search_highlighted"] forState:UIControlStateHighlighted];
     
-    self.navigationItem.rightBarButtonItems = @[searchBtn,historyBtn,downLoadBtn];
+    btnSearch.frame = CGRectMake(0, 0, 20,  20);
+
+//   UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"search_icon"] style:UIBarButtonItemStyleDone target:self action:@selector(search)];
+    UIButton *placeHolderbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    
+    UIBarButtonItem *phBtn = [[UIBarButtonItem alloc] initWithCustomView:placeHolderbtn];
+//    [btn setImage:[UIImage originImageWithName:@"home_navi_download"] forState:UIControlStateNormal];
+    
+    
+//    [btn setImage:[UIImage originImageWithName:@"home_navi_download_highlighted"] forState:UIControlStateHighlighted];
+    
+    placeHolderbtn.frame = CGRectMake(0, 0, 20,  20);
+    
+    self.navigationItem.rightBarButtonItems = @[searchBtn,phBtn,historyBtn,phBtn,downLoadBtn];
 
 }
 //设置刷新控件
