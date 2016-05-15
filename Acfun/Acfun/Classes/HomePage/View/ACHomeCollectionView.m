@@ -40,14 +40,18 @@
 {
 
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
-    flow.minimumInteritemSpacing = HomeCellMargin;
-    CGFloat width = (self.H_width - HomeCellMargin*4)*1.0/2;
-    flow.minimumLineSpacing = HomeCellMargin;
-    flow.minimumInteritemSpacing = HomeCellMargin;
-    flow.itemSize = CGSizeMake(width, 90);
+
+//    flow.minimumInteritemSpacing = 0;
+//    flow.minimumLineSpacing = HomeCellMargin;
+//    flow.minimumLineSpacing = 0;
     
     
     UICollectionView *collectionV = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flow];
+    collectionV.backgroundColor = [UIColor whiteColor];
+    collectionV.showsVerticalScrollIndicator = NO;
+    collectionV.showsHorizontalScrollIndicator = NO;
+//    collectionV.contentSize = CGSizeMake(0, 0);
+    collectionV.scrollEnabled = NO;
     [self addSubview:collectionV];
 
     
@@ -57,6 +61,12 @@
         make.leading.equalTo(self.mas_leading);
         make.trailing.equalTo(self.mas_trailing);
     }];
+    [self sizeToFit];
+    //每个Item的尺寸
+    CGFloat width = (self.H_width )*1.0/2.0;
+//    CGFloat height = self.H_height *1.0/2.0;
+    CGFloat height = 120;
+    flow.itemSize = CGSizeMake(width, height);
     
     self.collectionV = collectionV;
     collectionV.delegate = self;

@@ -13,4 +13,5 @@
 @property (nonatomic,strong) NSString *name;
 
 @property (nonatomic,strong) NSArray *contents;
+@property (nonatomic,assign)CGFloat height;
 @end

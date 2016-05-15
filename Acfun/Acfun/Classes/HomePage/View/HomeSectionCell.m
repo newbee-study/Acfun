@@ -7,6 +7,15 @@
 //
 
 #import "HomeSectionCell.h"
+#import "ACHomeCollectionView.h"
+@interface HomeSectionCell()
+
+@property (weak, nonatomic) IBOutlet ACHomeCollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIButton *moreContentButton;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
+
+@end
+
 
 @implementation HomeSectionCell
 

@@ -26,6 +26,7 @@
 		CA21BE4D1CE1F2F10086D305 /* UIImage+OriginImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA21BE4C1CE1F2F10086D305 /* UIImage+OriginImage.m */; };
 		CA25BA101CE609860089E8D1 /* ACTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25BA0F1CE609860089E8D1 /* ACTabBar.m */; };
 		CA25BA131CE61B050089E8D1 /* ACTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25BA121CE61B050089E8D1 /* ACTabBarButton.m */; };
+		CA25BA161CE70A680089E8D1 /* ACNetWorkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CA25BA151CE70A680089E8D1 /* ACNetWorkingTool.m */; };
 		CAAC98971CDE384B002DAA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC98951CDE384B002DAA3E /* Main.storyboard */; };
 		CAAC989A1CDE384B002DAA3E /* Acfun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98981CDE384B002DAA3E /* Acfun.xcdatamodeld */; };
 		CAAC989F1CDE384B002DAA3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC989D1CDE384B002DAA3E /* LaunchScreen.storyboard */; };
@@ -100,6 +101,8 @@
 		CA25BA0F1CE609860089E8D1 /* ACTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACTabBar.m; path = ../../HomePage/View/ACTabBar.m; sourceTree = "<group>"; };
 		CA25BA111CE61B050089E8D1 /* ACTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTabBarButton.h; sourceTree = "<group>"; };
 		CA25BA121CE61B050089E8D1 /* ACTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTabBarButton.m; sourceTree = "<group>"; };
+		CA25BA141CE70A680089E8D1 /* ACNetWorkingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNetWorkingTool.h; sourceTree = "<group>"; };
+		CA25BA151CE70A680089E8D1 /* ACNetWorkingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNetWorkingTool.m; sourceTree = "<group>"; };
 		CAAC98891CDE384B002DAA3E /* Acfun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acfun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAC98961CDE384B002DAA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAAC98991CDE384B002DAA3E /* Acfun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Acfun.xcdatamodel; sourceTree = "<group>"; };
@@ -379,6 +382,8 @@
 		CA21BE201CE0A98F0086D305 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CA25BA141CE70A680089E8D1 /* ACNetWorkingTool.h */,
+				CA25BA151CE70A680089E8D1 /* ACNetWorkingTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -693,6 +698,7 @@
 				CAB0EE851CE3808E00BA96BF /* HomeSectionItem.m in Sources */,
 				CA21BE301CE0C1610086D305 /* ACTabBarController.m in Sources */,
 				CA21BE211CE0A98F0086D305 /* AFHTTPSessionManager.m in Sources */,
+				CA25BA161CE70A680089E8D1 /* ACNetWorkingTool.m in Sources */,
 				CA21BE261CE0A98F0086D305 /* AFURLSessionManager.m in Sources */,
 				CA21BE3C1CE0C2970086D305 /* ACMineViewController.m in Sources */,
 				CA21BE271CE0A98F0086D305 /* AppDelegate.m in Sources */,

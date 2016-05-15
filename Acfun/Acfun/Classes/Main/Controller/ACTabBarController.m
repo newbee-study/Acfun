@@ -26,7 +26,7 @@
     
     [self setUpAllChildView];
     
-       self.tabBar.hidden = YES;
+    self.tabBar.hidden = YES;
     
     
     

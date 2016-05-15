@@ -9,10 +9,12 @@
 #import "ACHomePageViewController.h"
 #import <Masonry.h>
 #import "HomeSectionCell.h"
+#import "ACNetWorkingTool.h"
+#import "AFNetworking.h"
 @interface ACHomePageViewController ()
 @property (nonatomic,weak) UIView *refresh;
 @property (nonatomic,assign) BOOL isRefreshing;
-
+@property (nonatomic,strong) ACNetWorkingTool *networkTool;
 @end
 
 @implementation ACHomePageViewController
@@ -23,8 +25,45 @@
     [self setUpNavBarItems];
     [self setUpRefresh];
     [self setUpHeadView];
+    [self doRefresh];
+//    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -64, 0);
+    
+
       }
 
+
+- (ACNetWorkingTool *)networkTool
+{
+    if (!_networkTool) {
+        _networkTool = [ACNetWorkingTool sharedManager];
+    }
+    return _networkTool;
+}
+
+#pragma mark ----获取网络数据
+- (void)loadData
+{
+    NSDictionary *dict = [NSDictionary dictionary];
+ 
+    dict = @{
+             @"deviceType" : @"iPhoneDevice"
+             };
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    [manager GET:@"http://api.aixifan.com/regions/7" parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//              NSLog(@"%@",responseObject);
+//
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//              NSLog(@"%@",error);
+//
+//    }];
+//  [self.networkTool Get:@"http://api.aixifan.com/regions/7" parameters:dict downloadProcess:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+//      NSLog(@"%@",responseObject);
+//  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//      NSLog(@"%@",error);
+//  }];
+    
+
+}
 #pragma mark ----设置UI界面控件
 //设置UI界面控件
 //设置导航条按钮
@@ -40,8 +79,6 @@
     
    
     //右侧离线缓存
-//   UIBarButtonItem *downLoadBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"home_navi_download"] style:UIBarButtonItemStyleDone target:self action:@selector(downLoad)];
-    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     
@@ -65,7 +102,6 @@
     
     btnHistory.frame = CGRectMake(0, 0, 20,  20);
     
-//   UIBarButtonItem *historyBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"nav_history"] style:UIBarButtonItemStyleDone target:self action:@selector(history)];
     //右侧搜索
     UIButton *btnSearch = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -78,18 +114,14 @@
     
     btnSearch.frame = CGRectMake(0, 0, 20,  20);
 
-//   UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc ]initWithImage:[UIImage originImageWithName:@"search_icon"] style:UIBarButtonItemStyleDone target:self action:@selector(search)];
+
+    //占位按钮
     UIButton *placeHolderbtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    
     UIBarButtonItem *phBtn = [[UIBarButtonItem alloc] initWithCustomView:placeHolderbtn];
-//    [btn setImage:[UIImage originImageWithName:@"home_navi_download"] forState:UIControlStateNormal];
-    
-    
-//    [btn setImage:[UIImage originImageWithName:@"home_navi_download_highlighted"] forState:UIControlStateHighlighted];
-    
+
     placeHolderbtn.frame = CGRectMake(0, 0, 20,  20);
-    
+    //添加进Items
     self.navigationItem.rightBarButtonItems = @[searchBtn,phBtn,historyBtn,phBtn,downLoadBtn];
 
 }
@@ -146,7 +178,7 @@
     //顶部高度
     CGFloat top = 2 * HomeCellMargin + 28;
     
-    CGFloat middle = 300;
+    CGFloat middle = 250;
     
     CGFloat bottom = 2 *HomeCellMargin + 18;
     
@@ -186,7 +218,7 @@
        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self endRefresh];
     });
-    
+    [self loadData];
     NSLog(@"刷新ing");
 }
 //结束刷新
@@ -194,7 +226,7 @@
 {
     self.isRefreshing = NO;
     [UIView animateWithDuration:.75 animations:^{
-        self.tableView.contentInset = UIEdgeInsetsMake(64, 0,0, 0);
+        self.tableView.contentInset = UIEdgeInsetsMake(64, 0,50, 0);
 
     }];
 
@@ -213,7 +245,7 @@
     //完全露出刷新控件
     if (scrollView.contentOffset.y <= -self.refresh.H_height -64) {
 
-        self.tableView.contentInset = UIEdgeInsetsMake(64 + 64, 0, 0, 0);
+        self.tableView.contentInset = UIEdgeInsetsMake(64 + 64, 50, 0, 0);
         
 
         [self doRefresh];
